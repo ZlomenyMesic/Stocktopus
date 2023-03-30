@@ -34,10 +34,6 @@ namespace Stocktopus {
                     else if (move.start == 56) board.canWhiteLongCastle = false;
                     else if (move.start == 63) board.canWhiteShortCastle = false;
                 }
-                if (move.end == 0) board.canBlackLongCastle = false;
-                else if (move.end == 7) board.canBlackShortCastle = false;
-                else if (move.end == 56) board.canWhiteLongCastle = false;
-                else if (move.end == 63) board.canWhiteShortCastle = false;
             }
             else {
                 Piece? promoted = null;
@@ -50,6 +46,11 @@ namespace Stocktopus {
 
                 board[move.end] = promoted;
             }
+            if (move.end == 0) board.canBlackLongCastle = false;
+            else if (move.end == 7) board.canBlackShortCastle = false;
+            else if (move.end == 56) board.canWhiteLongCastle = false;
+            else if (move.end == 63) board.canWhiteShortCastle = false;
+
             board[move.start] = null;
         }
     }

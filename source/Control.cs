@@ -74,10 +74,6 @@ namespace Stocktopus {
             }
             Move bestMove = best[new Random().Next(0, best.Count)];
             board[bestMove.start].MoveTo(bestMove, board);
-            Console.WriteLine($"WS: {board.canWhiteShortCastle}");
-            Console.WriteLine($"WL: {board.canWhiteLongCastle}");
-            Console.WriteLine($"BS: {board.canBlackShortCastle}");
-            Console.WriteLine($"BL: {board.canBlackLongCastle}");
             return $"bestmove {MoveToStr(bestMove)}";
         }
 

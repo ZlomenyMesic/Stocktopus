@@ -12,12 +12,12 @@ namespace Stocktopus {
             for (int i = 0; i < board.Length; i++) {
                 if (board[i] != null && board[i].color == color) {
                     switch (board[i].boardNum) {
-                        case 1: moves.AddRange(MCPatterns.GetPawnMoves(board, i, attacks)); break;
-                        case 2: moves.AddRange(MCPatterns.GetKnightMoves(board, i)); break;
-                        case 3: moves.AddRange(MCPatterns.GetBishopMoves(board, i)); break;
-                        case 4: moves.AddRange(MCPatterns.GetRookMoves(board, i)); break;
-                        case 5: moves.AddRange(MCPatterns.GetQueenMoves(board, i)); break;
-                        case 6: moves.AddRange(MCPatterns.GetKingMoves(board, i)); break;
+                        case 1: moves.AddRange(MovePatterns.GetPawnMoves(board, i, attacks)); break;
+                        case 2: moves.AddRange(MovePatterns.GetKnightMoves(board, i)); break;
+                        case 3: moves.AddRange(MovePatterns.GetBishopMoves(board, i)); break;
+                        case 4: moves.AddRange(MovePatterns.GetRookMoves(board, i)); break;
+                        case 5: moves.AddRange(MovePatterns.GetQueenMoves(board, i)); break;
+                        case 6: moves.AddRange(MovePatterns.GetKingMoves(board, i)); break;
                     }
                 }
             }
