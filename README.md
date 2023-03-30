@@ -1,0 +1,2 @@
+# Stocktopus
+Stocktopus chess engine
