@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Stocktopus {
     internal static class OpeningsBook {
         private static List<string[]> openings = new List<string[]> {
-            // Alekhines's defense
+            // Alekhine's defense
             new string[]{ "e2e4", "g8f6", "e4e5", "f6d5", "d2d4", "d7d6", "c2c4", "d5b6", "f2f4", "d6e5", "f4e5", "b8c6", "c1e3", "c8f5", "b1c3", "e7e6", "g1f3", "f8e7" }, // Four pawns opening
             new string[]{ "e2e4", "g8f6", "e4e5", "f6d5", "d2d4", "d7d6", "c2c4", "d5b6", "e5d6", "c7d6", "b1c3", "g7g6", "c1e3", "f8g7", "a1c1" }, // Exchange variation
             new string[]{ "e2e4", "g8f6", "e4e5", "f6d5", "d2d4", "d7d6", "g1f3", "c8g4", "f1e2" }, // Modern variation
